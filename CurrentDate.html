@@ -1,0 +1,23 @@
+<html>
+    <head>
+     <title>Date</title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <script>
+           var today = new Date();
+           var date1 = today.getMonth()+1 + "-" + today.getDate() + "-" + today.getUTCFullYear();
+           document.getElementById("p1").innerHTML= date1;
+           var date2 = today.getMonth()+1 + "/" + today.getDate() + "/" + today.getUTCFullYear();
+           document.getElementById("p2").innerHTML= date2;
+           var date3 = today.getDate() + "-" + (today.getMonth()+1) + "-" + today.getUTCFullYear();
+           document.getElementById("p3").innerHTML= date3;
+           var date4 = today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getUTCFullYear();
+           document.getElementById("p4").innerHTML= date4;
+        </script>
+
+    </body>
+</html>

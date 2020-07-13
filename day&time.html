@@ -1,0 +1,19 @@
+<html>
+    <head>
+     <title>Day and Time</title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script>
+           var today = new Date();
+           var myDay=today.getDay();
+           
+           var weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+           document.write("Today is:"+weekday[myDay]);
+           var time = "Current Time is:"+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+           document.getElementById("p1").innerHTML= time;
+
+        </script>
+
+    </body>
+</html>
